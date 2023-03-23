@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Requisitos</title>
+</head>
+<style>
+     body {
+        background-image: url(fondo2.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        text-align:justify;
+    }
+
+    div {
+        margin: 30px; 
+    }
+
+    h1{
+        font-size: 40px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: underline;
+    }
+
+    h3{
+        text-decoration: underline;
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 25px;
+    }
+
+    h6{
+        font-size: 20px;
+    }
+    
+    a { 
+        transition: background-color .5s;
+        color:black;
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 1cm;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+    }
+
+    a:hover {
+        color: lightgrey;
+        background-color: black;
+    }
+
+</style>
+<body>
+    <div>
+        <h1>Análisis de requisitos</h1>
+
+        <br/>
+        <br/>
+
+        <h3><p>Menú de inicio:</p></h3>
+
+        <h4><p>El jugador podrá acceder a un apartado de configuración:</p></h4>
+
+        <h6><li>En este apartado tendrá diferentes ajustes de sonido y video, además del idioma.</li></h6>
+
+        <h4><p>El jugador podrá acceder a un apartado para salir del videojuego:</p></h4>
+
+        <h6><li>En este apartado el jugador podrá salir del videojuego.</li></h6>
+
+        <h4><p>El jugador podrá acceder a un apartado donde acceder a la historia del videojuego:</p></h4>
+
+        <h6><li>Al acceder a este apartado estará disponible la opción de crear una nueva partida.</li></h6>
+
+        <h6><li>Al acceder a este apartado el jugador podrá elegir la dificultad que desea implementar en esta partida.</li></h6>
+
+        <h6><li>Además podrá poner un nombre a la partida.</li></h6>
+
+        <h6><li>Si el jugador ya tiene una partida previamente guardada, podrá acceder a otro apartado donde podrá seleccionar la partida guardada que desee.</li></h6>
+
+        <h6><li>Además podrá modificar el nombre de la partida y también podrá hacer una copia de seguridad o borrar la misma.</li></h6>
+
+        <h6><li>La dificultad no se podrá modificar.</li></h6>
+
+        <br/>
+        <br/>
+
+        <h3><p>HUB:</p></h3>
+
+        <h6><li>En el caso de que el jugador haya seleccionado la opción de nueva partida, haya ajustado a su gusto la partida y le diese a continuar, aparecerá una cinemática explicando el comienzo del videojuego. Después de la cinemática dará comienzo una opción donde da a elegir al jugador si quiere tener una leyenda donde mostrarle los controles a modo tutorial o sino quiere que aparezca la leyenda de tutorial.</li></h6>
+
+        <h6><li>En el caso de que el jugador haya seleccionado la opción de continuar la partida, aparecerá en un menú para seleccionar el nivel que desea jugar, no podrá avanzar si el último nivel que tiene desbloqueado no lo ha completado.</li></h6>
+
+        <h6><li>Después en ambos casos estará en una pantalla donde el jugador podrá controlar a gusto el personaje. Tendrá un hud bastante minimalista, en el que aparecerá la vida que tiene a través de una barra vertical delimitada en 5 tramos que podrán ser aumentados a lo largo de la partida que estará localizada en la parte inferior derecha.</li></h6>
+
+        <h6><li>Al lado izquierdo de la barra de vida se encontrará una barra de estamina en la que el jugador podrá saber si el personaje dispone de la energía suficiente para poder hacer un ataque cargado o correr. Esta barra de estamina bajará por cada ataque que el jugador realice y bajará aún más si el ataque es cargado o el jugador corre. Esta barra se irá recuperando cuando el jugador no realice ninguna acción que no sea andar, aunque a lo largo del nivel esta barra irá bajando su máximo de estamina y se podrá recuperar la estamina perdida con diferentes objetos consumibles.</li></h6>
+
+        <br/>
+        <br/>
+
+        <h3><p>Inventario del personaje:</p></h3>
+
+        <h4><p>El jugador podrá acceder al inventario del personaje en cualquier momento que no sea una cinemática, pudiendo intercambiar entre armas o asignarlas a diferentes atajos en el control que se utilice.</p></h4>
+
+        <h6><li>Cada arma tendrá características únicas, y se podrán desbloquear a lo largo de la historia. Estos objetos en su mayoría se conseguirán de manera obligatoria en su momento, aunque hay otros que deberán ser encontrados.</li></h6>
+
+        <h4><p>Al personaje se le podrá modificar la indumentaria.</p></h4>
+
+        <h6><li>Estos objetos pueden ser desbloqueados a lo largo de la historia y cada uno tendrá características únicas.</li></h6>
+
+        <br/>
+        <br/>
+
+        <h3><p>Menú de selección de niveles:</p></h3>
+
+        <h6><li>Al finalizar cualquier nivel el jugador conseguirá puntos dependiendo del tiempo que haya tardado en completarlo. Al final de cada nivel se verá una pantalla que muestre los enemigos derrotados, junto a su puntuación donde se hará una suma total de puntos entre los puntos que ya tenía el jugador y los puntos que ha conseguido en este nivel.</li></h6>
+
+        <h6><li>Después el jugador accede a un menú de selección de nivel. El jugador podrá seleccionar el siguiente nivel siempre que haya completado el nivel anterior a este. Si el jugador selecciona un nivel que ya ha completado la dificultad de este será incrementada un 50%, aunque esta dificultad no será acumulable por cuantas veces repita el mismo nivel.</li></h6>
+
+        <h6><li>En este menú de selección de niveles el jugador a veces podrá encontrarse con un nivel, en el cual podrá encontrar a Nicolás (Mercader) y podrá canjear los puntos que haya conseguido al finalizar los niveles por diferentes objetos como consumibles, armas, armaduras, niveles de mejora e incluso incrementos de vida y stamina.</li></h6>
+
+        <br/>
+        <br/>
+
+        <h3><p>Menú de pausa</p></h3>
+
+        <h4><p>En este menú podremos encontrar la configuración, guardar y cargar partida, y salir.</p></h4>
+
+        <h6><li>Configuración: Aquí se accede al mismo menú de configuración de audio,  video e idioma del menú de inicio.</li></h6>
+
+        <h6><li>Guardar partida: En este menú se podrá guardar la partida.</li></h6>
+
+        <h6><li>Cargar la partida: En este menú se podrá cargar una partida ya guardada, si el jugador lo desea.</li></h6>
+
+        <h6><li>Salir: Habrán dos opciones al seleccionar esta opción.</li></h6>
+
+        <h6><li>Salir al menú de inicio: Al seleccionar esta opción se volverá a la pantalla del título con el menú de inicio.</li></h6>
+
+        <h6><li>Salir del juego: Al seleccionar esta opción el juego se cerrará.</li></h6>
+
+        <br/>
+        <br/>
+
+        <h3><p>Menú de mejoras de arma</p></h3>
+
+        <h6><li>Cada enemigo podrá soltar algunos objetos, incluidos partes para mejoras de armas.</li></h6>
+
+        <h6><li>También se podrán encontrar estas piezas por diferentes partes de los niveles que estarán bien escondidas.</li></h6>
+
+        <h6><li>Las armas se podrán mejorar en una sección de mejora en las diferentes tiendas de Nicolás (Mercader).</li></h6>
+
+        <h6><li>Las armas podrán modificarse implementando mejorar con piezas encontradas. Las modificaciones siempre mejoran el arma.</li></h6>
+
+        <h6><li>Cada arma será distinta en su modificación y nivel de mejora.</li></h6>
+
+        <h6><li>Las armas podrán ser modificadas estéticamente dependiendo de la mejora que se le aplique.</li></h6>
+
+        <br/>
+        <br/>
+
+        <h3><p>Escenarios:</p></h3>
+
+        <h6><li>Escenario de nivel: Dependiendo de la localización en la historia, el escenario será modificado.</li></h6>
+
+        <h6><li>Escenario de selección de nivel: Igual que el escenario de nivel.</li></h6>
+
+        <br/>
+        <br/>
+
+        <a href="index.html">Volver a inicio</a>
+    </div>
+</body>
+</html>
